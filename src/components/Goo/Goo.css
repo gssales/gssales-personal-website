@@ -1,0 +1,175 @@
+/* animations */  
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-move {
+	0%, 100% {
+		background-position: 0% 0%;
+	}
+	25% {
+		background-position: 0% 100%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	75% {
+		background-position: 100% 0%;
+	}
+}
+
+/* orbits and blobs */  
+.goo {
+  flex: 1;
+  min-height: 20rem;
+  min-width: 20rem;
+
+  filter: url('/public/filter/filter.svg#gooey-filter');
+  position: relative;
+
+  transform: scale(1.2) translate(0, -50%);
+}
+
+.orbit {
+  position: absolute;
+  animation: rotate linear 0s infinite;
+
+  width: 5px;
+  height: 5px;
+}
+.orbit.l0 {
+  left: 50%;
+  top: 50%;
+  animation-duration: 19s;
+  background-color: black;
+}
+.orbit.l00 {
+  left: 8rem;
+  top: 0;
+  animation-duration: 29s;
+  animation-direction: reverse;
+  background-color: blue;
+}
+.orbit.l1 {
+  left: 60%;
+  top: 50%;
+  animation-duration: 31s;
+  background-color: red;
+}
+.orbit.l10 {
+  left: 10rem;
+  top: 0px;
+  animation-duration: 23s;
+  animation-direction: reverse;
+  background-color: violet;
+}
+.orbit.l100 {
+  left: 2rem;
+  top: 0px;
+  animation-duration: 19s;
+  background-color: white;
+}
+ 
+.blob {  
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+
+  animation: rotate linear 0s infinite, 
+    gradient-move linear 0s infinite;
+
+  background: radial-gradient(50% 50%, var(--color-secondary) 20%, var(--color-primary) 80%);
+  background-size: 200% 200%;
+}
+.blob.xs {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.2rem;
+  
+  left: -1.5rem;
+  top: 0.5rem;
+
+  animation-duration: 29s, (29s/3);
+  animation-direction: reverse, normal;
+  background-color: violet;
+}
+.blob.sm {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem;
+  
+  left: -2.5rem;
+  top: 0.5rem;
+
+  animation-duration: 37s, (37s/3);
+  animation-direction: normal, reverse;
+  background-color: white;
+}
+.blob.md {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 3rem;
+  
+  left: -4rem;
+  top: -8rem;
+
+  animation-duration: 23s, (23s/3);
+  animation-direction: reverse, normal;
+  background-color: blue;
+}
+.blob.lg {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 4.25rem;
+  
+  left: -5rem;
+  top: 0rem;
+
+  animation-duration: 29s, (29s/3);
+  animation-direction: normal, reverse;
+  background-color: red;
+}
+.blob.xl {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 6.75rem;
+  
+  left: -7.5rem;
+  top: -6.5rem;
+
+  animation-duration: 34s, (34s/3);
+  animation-direction: reverse, normal;
+  background-color: black;
+}
+
+
+/* MD */
+@media screen and (min-width: 768px) {
+  .goo {
+    min-height: 25rem;
+    min-width: 25rem;
+
+    transform: scale(1) translate(0);
+  }
+}
+
+/*LG */
+@media screen and (min-width: 1024px) {
+  .goo {
+    min-height: 30rem;
+    min-width: 30rem;
+  }
+}
+
+/* XL */
+/* @media screen and (min-width: 1280px) {
+
+} */
+
+/* 2XL */
+/* @media screen and (min-width: 1536px) {
+
+} */

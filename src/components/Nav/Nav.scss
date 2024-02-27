@@ -1,0 +1,42 @@
+/* SM */
+nav {
+  background-color: var(--color-surface);
+  padding: 0.75rem 1rem;
+
+  display: none;
+
+  ul {
+    font-family: var(--font-mono);
+    font-size: var(--text-small);
+    font-weight: var(--weight-light);
+    color: var(--color-text);
+  }
+
+  a {
+    line-height: 2.5rem;
+  }
+}
+
+/* MD */
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+  }
+}
+
+/* LG */
+@media screen and (min-width: 1024px) {
+  nav ul {
+    font-size: var(--text-medium);
+  }
+}
+
+/* XL */
+/* @media screen and (min-width: 1280px) {
+  
+} */
+
+/* 2XL */
+/* @media screen and (min-width: 1536px) {
+
+} */

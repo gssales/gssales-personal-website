@@ -1,0 +1,22 @@
+{
+  "greeting": {
+    "line1": "Olá! Meu nome é",
+    "line2": "Guilherme Sales"
+  },
+  "heading": {
+    "line1": "Desenvolvedor Frontend",
+    "line2": "Experiente com React, Javascript, Typescript, CSS3 e Tailwind CSS"
+  },
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  },
+  "navigation": {
+    "about-me": "Sobre mim",
+    "experience": "Experiência",
+    "interests": "Áreas de Interesse",
+    "hobbies": "Hobbies",
+    "projects": "Projects",
+    "links": "Links"
+  }
+}

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: theme('colors.lawn_green.DEFAULT');
+  --color-secondary: theme('colors.vivid_sky_blue.DEFAULT');
+  --color-tertiary: theme('colors.light_sea_green.DEFAULT');
+  --color-background: theme('colors.dark_green.DEFAULT');
+  --color-surface: theme('colors.midnight_green.DEFAULT');
+  --color-text: theme('colors.light_gray');
+
+  --font-sans: theme('fontFamily.regular');
+  --font-mono: theme('fontFamily.monospaced');
+
+  --text-small: theme('fontSize.sm');
+  --text-medium: theme('fontSize.base');
+  --text-large: theme('fontSize.lg');
+  --text-x-large: theme('fontSize.xl');
+  --text-2x-large: theme('fontSize.2xl');
+  --text-3x-large: theme('fontSize.3xl');
+  --text-4x-large: theme('fontSize.4xl');
+  --text-5x-large: theme('fontSize.5xl');
+  --text-6x-large: theme('fontSize.6xl');
+
+  --weight-light: theme('fontWeight.light');
+  --weight-normal: theme('fontWeight.normal');
+  --weight-medium: theme('fontWeight.medium');
+  --weight-bold: theme('fontWeight.bold');
+  --weight-black: theme('fontWeight.black');
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary) 40%, var(--color-secondary) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-blob {
+  background: linear-gradient(128deg, rgb(137, 249, 84) 20%, rgb(53, 199, 245) 80%);
+}
