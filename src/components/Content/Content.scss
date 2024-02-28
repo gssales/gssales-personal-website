@@ -1,0 +1,83 @@
+
+main {
+  padding: 0.75rem 1.75rem;
+
+  .floating-anchor {
+    position: relative;
+    top: -80px;
+    width: 1px;
+    background-color: transparent;
+    z-index: -1;
+  }
+}
+
+section {
+  color: var(--color-text);
+  font-size: var(--text-small);
+  padding-bottom: 1.5rem;
+
+  &:first-child {
+    padding-top: 2.5rem;
+  }
+
+  span.font-icon {
+    font-size: var(--text-2x-large);
+    color: var(--color-primary);
+    margin-inline-end: 0.25rem;
+    vertical-align: text-bottom;
+  }
+
+  h1 {
+    font-family: var(--font-mono);
+    font-size: var(--text-large);
+    font-weight: var(--weight-medium);
+  }
+
+  p {
+    padding-top: 0.6rem;
+    text-indent: 1.5rem;
+    line-height: 1.66rem;
+  }
+}
+
+/* MD */
+@media screen and (min-width: 768px) {
+  section {
+    font-size: var(--text-medium);
+  
+    span.font-icon {
+      font-size: var(--text-3x-large);
+      margin-inline-end: 0.5rem;
+    }
+  
+    h1 {
+      font-size: var(--text-x-large);
+    }
+  }
+}
+
+/*LG */
+@media screen and (min-width: 1024px) {
+  
+}
+
+/* XL */
+ @media screen and (min-width: 1280px) {
+  section {
+    font-size: var(--text-large);
+  
+    span.font-icon {
+      font-size: var(--text-3x-large);
+      margin-inline-end: 0.5rem;
+    }
+  
+    h1 {
+      font-size: var(--text-2x-large);
+    }
+  }
+}
+
+/* 2XL */
+/* @media screen and (min-width: 1536px) {
+
+} */

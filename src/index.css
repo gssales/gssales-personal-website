@@ -47,3 +47,11 @@ body {
 .gradient-blob {
   background: linear-gradient(128deg, rgb(137, 249, 84) 20%, rgb(53, 199, 245) 80%);
 }
+
+.font-icon {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 100,
+  'opsz' 24
+}

@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'regular': '"Cabin", sans-serif',
         'monospaced': '"Azeret Mono", monospace',
+        'icon': '"Material Symbols Rounded"',
       },
       colors: { 
         'dark_green': { DEFAULT: '#012627', 100: '#000808', 200: '#000f10', 300: '#011718', 400: '#011f20', 500: '#012627', 600: '#037f83', 700: '#06d8df', 800: '#48f4fa', 900: '#a4fafd' }, 
