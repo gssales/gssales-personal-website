@@ -7,11 +7,11 @@ function Nav() {
   const { t, i18n } = useTranslation();
   const anchors = [
     'about-me',
-    'experience',
-    'interests',
-    'projects',
-    'hobbies',
-    'links'
+    // 'experience',
+    // 'interests',
+    // 'projects',
+    // 'hobbies',
+    // 'links'
   ]
 
   return (

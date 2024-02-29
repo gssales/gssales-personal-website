@@ -14,7 +14,7 @@ function Content() {
         </div>
       </Section>
       
-      <Section icon="work" id="experience" titleKey="experience.title">
+      {/* <Section icon="work" id="experience" titleKey="experience.title">
         <p>{ t('experience.content') }</p>
       </Section>
       
@@ -32,7 +32,7 @@ function Content() {
 
       <Section icon="share" id="links" titleKey="links.title">
         <p>{ t('links.content') }</p>
-      </Section>
+      </Section> */}
     </main>
   )
 }
