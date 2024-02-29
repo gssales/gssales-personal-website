@@ -40,6 +40,15 @@ section {
   }
 }
 
+.about-me {
+  img {
+    margin: auto;
+    max-width: 66%;
+    aspect-ratio: 1;
+    border-radius: 10000px;
+  }
+}
+
 /* MD */
 @media screen and (min-width: 768px) {
   section {
@@ -54,11 +63,26 @@ section {
       font-size: var(--text-x-large);
     }
   }
+  
+  .about-me {
+    img {
+      margin: auto;
+      max-width: 40%;
+    }
+  }
 }
 
 /*LG */
 @media screen and (min-width: 1024px) {
-  
+  .about-me {
+    p {
+      max-width: 50%;
+    }
+
+    img {
+      max-width: 280px
+    }
+  }
 }
 
 /* XL */

@@ -8,7 +8,10 @@ function Content() {
   return (
     <main className="container mx-auto">
       <Section icon="badge" id="about-me" titleKey="about-me.title">
-        <p>{ t('about-me.content') }</p>
+        <div className="about-me flex flex-col lg:flex-row gap-6">
+          <p>{ t('about-me.content') }</p>
+          <img src='/images/pfp.jpg'/>
+        </div>
       </Section>
       
       <Section icon="work" id="experience" titleKey="experience.title">
