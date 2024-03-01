@@ -35,41 +35,33 @@
 .orbit {
   position: absolute;
   animation: rotate linear 0s infinite;
-
-  width: 5px;
-  height: 5px;
 }
 .orbit.l0 {
   left: 50%;
   top: 50%;
   animation-duration: 19s;
-  background-color: black;
 }
 .orbit.l00 {
   left: 8rem;
   top: 0;
   animation-duration: 29s;
   animation-direction: reverse;
-  background-color: blue;
 }
 .orbit.l1 {
   left: 60%;
   top: 50%;
   animation-duration: 31s;
-  background-color: red;
 }
 .orbit.l10 {
   left: 10rem;
   top: 0px;
   animation-duration: 23s;
   animation-direction: reverse;
-  background-color: violet;
 }
 .orbit.l100 {
   left: 2rem;
   top: 0px;
   animation-duration: 19s;
-  background-color: white;
 }
  
 .blob {  
@@ -94,7 +86,6 @@
 
   animation-duration: 29s, (29s/3);
   animation-direction: reverse, normal;
-  background-color: violet;
 }
 .blob.sm {
   width: 5rem;
@@ -106,7 +97,6 @@
 
   animation-duration: 37s, (37s/3);
   animation-direction: normal, reverse;
-  background-color: white;
 }
 .blob.md {
   width: 8rem;
@@ -118,7 +108,6 @@
 
   animation-duration: 23s, (23s/3);
   animation-direction: reverse, normal;
-  background-color: blue;
 }
 .blob.lg {
   width: 10rem;
@@ -130,7 +119,6 @@
 
   animation-duration: 29s, (29s/3);
   animation-direction: normal, reverse;
-  background-color: red;
 }
 .blob.xl {
   width: 15rem;
@@ -142,7 +130,6 @@
 
   animation-duration: 34s, (34s/3);
   animation-direction: reverse, normal;
-  background-color: black;
 }
 
 
