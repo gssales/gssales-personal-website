@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './Content.scss'
 import Section from './Section'
-import utils from '../../utils';
+import utils from '../../utils/utils';
 
 function Content() {
   const { t } = useTranslation();
@@ -22,21 +22,17 @@ function Content() {
           { utils.getTranslationArray(t('interests.areas', { returnObjects: true })).map(a => <li>{a}</li>) }
         </ul>
       </Section>
+      
+      <Section icon="code" id="projects" titleKey="projects.title">
+        <p>{ t('projects.content') }</p>
+      </Section>
 
       {/* <Section icon="work" id="experience" titleKey="experience.title">
         <p>{ t('experience.content') }</p>
       </Section>
       
-      <Section icon="book" id="interests" titleKey="interests.title">
-        <p>{ t('interests.content') }</p>
-      </Section>
-      
       <Section icon="family_link" id="hobbies" titleKey="hobbies.title">
         <p>{ t('hobbies.content') }</p>
-      </Section>
-
-      <Section icon="code" id="projects" titleKey="projects.title">
-        <p>{ t('projects.content') }</p>
       </Section>
 
       <Section icon="share" id="links" titleKey="links.title">

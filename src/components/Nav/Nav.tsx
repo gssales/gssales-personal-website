@@ -2,7 +2,7 @@
 import { useTranslation } from 'react-i18next';
 
 import './Nav.scss'
-import utils from '../../utils';
+import utils from '../../utils/utils';
 
 function Nav() {
   const { t, i18n } = useTranslation();
