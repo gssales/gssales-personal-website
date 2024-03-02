@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import './Content.scss'
 import Section from './Section'
+import utils from '../../utils';
 
 function Content() {
   const { t } = useTranslation();
+  const highlights = utils.getTranslationArray(t('highlights', { returnObjects: true }))
 
   return (
     <main className="container mx-auto">
@@ -14,6 +16,13 @@ function Content() {
         </div>
       </Section>
       
+      <Section icon="book" id="interests" titleKey="interests.title">
+        <p>{ utils.highlightText(t('interests.content'), highlights) }</p>
+        <ul className="interests">
+          { utils.getTranslationArray(t('interests.areas', { returnObjects: true })).map(a => <li>{a}</li>) }
+        </ul>
+      </Section>
+
       {/* <Section icon="work" id="experience" titleKey="experience.title">
         <p>{ t('experience.content') }</p>
       </Section>
