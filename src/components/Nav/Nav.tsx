@@ -7,7 +7,7 @@ import utils from '../../utils/utils';
 function Nav() {
   const { t, i18n } = useTranslation();
   const anchors = utils.getTranslationArray(t('navigation', { returnObjects: true }))
-    .filter(a => a.id === "about-me" || a.id === "interests")
+    .filter(a => a.id === "about-me" || a.id === "interests" || a.id === "projects")
 
   return (
     <nav>

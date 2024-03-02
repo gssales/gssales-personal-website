@@ -2,10 +2,12 @@ import { useTranslation } from 'react-i18next';
 import './Content.scss'
 import Section from './Section'
 import utils from '../../utils/utils';
+import Card from '../Card/Card';
 
 function Content() {
   const { t } = useTranslation();
   const highlights = utils.getTranslationArray(t('highlights', { returnObjects: true }))
+  const projects = utils.getTranslationArray(t('projects.cards', { returnObjects: true }))
 
   return (
     <main className="container mx-auto">
@@ -25,6 +27,12 @@ function Content() {
       
       <Section icon="code" id="projects" titleKey="projects.title">
         <p>{ t('projects.content') }</p>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-8 justify-items-center">
+          {
+            projects.map(p => 
+              <Card title={p.title} description={p.description} href={p.href} imgSrc={`${process.env.PUBLIC_URL}${p.img}`}/>)
+          }
+        </div>
       </Section>
 
       {/* <Section icon="work" id="experience" titleKey="experience.title">

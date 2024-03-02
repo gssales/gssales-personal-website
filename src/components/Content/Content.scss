@@ -37,10 +37,15 @@ section {
     padding-top: 0.6rem;
     text-indent: 1.5rem;
     line-height: 1.66rem;
+    letter-spacing: 0.5px;
   }
 
   span[data-highlight=true] {
     color: var(--color-secondary);
+  }
+
+  .grid {
+    padding: 1.75rem 0;
   }
 }
 
