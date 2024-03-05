@@ -73,7 +73,7 @@
   animation: rotate linear 0s infinite, 
     gradient-move linear 0s infinite;
 
-  background: radial-gradient(50% 50%, var(--color-secondary) 20%, var(--color-primary) 80%);
+  background: radial-gradient(closest-side at 50% 50%, var(--color-secondary) 20%, var(--color-primary) 80%);
   background-size: 200% 200%;
 }
 .blob.xs {

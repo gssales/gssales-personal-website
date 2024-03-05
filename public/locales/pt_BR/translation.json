@@ -69,31 +69,24 @@
   },
   "projects": {
     "title": "Projetos",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing",
     "cards": [
       {
         "title": "Space Defenders",
-        "description": "Um jogo de nave espacial feito com Javascript puro que eu desenvolvi nas férias de 2018",
+        "description": "Um jogo de nave espacial feito com Javascript puro que eu desenvolvi 2018.",
         "img": "/images/space-defenders.png",
         "href": "/~gssales/spacedefenders"
       },
       {
-        "title": "Space Defenders",
-        "description": "Um jogo de nave espacial feito com Javascript puro que eu desenvolvi nas férias de 2018",
-        "img": "/images/space-defenders.png",
-        "href": "/~gssales/spacedefenders"
+        "title": "SPong",
+        "description": "Projeto de desenvolvimento web feito em Javascript puro em 2017.",
+        "img": "/images/spong.png",
+        "href": "/~gssales/spong"
       },
       {
-        "title": "Space Defenders",
-        "description": "Um jogo de nave espacial feito com Javascript puro que eu desenvolvi nas férias de 2018",
-        "img": "/images/space-defenders.png",
-        "href": "/~gssales/spacedefenders"
-      },
-      {
-        "title": "Space Defenders",
-        "description": "Um jogo de nave espacial feito com Javascript puro que eu desenvolvi nas férias de 2018",
-        "img": "/images/space-defenders.png",
-        "href": "/~gssales/spacedefenders"
+        "title": "DoisMilEQuarentaEOito",
+        "description": "Réplica do jogo 2048 feito em Javascript feito em 2018.",
+        "img": "/images/doiszeroquatrooito.png",
+        "href": "/~gssales/doismilequarentaeoito"
       }
     ]
   },

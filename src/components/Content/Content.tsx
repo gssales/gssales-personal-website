@@ -26,7 +26,6 @@ function Content() {
       </Section>
       
       <Section icon="code" id="projects" titleKey="projects.title">
-        <p>{ t('projects.content') }</p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-8 justify-items-center">
           {
             projects.map(p => 
