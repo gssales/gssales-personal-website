@@ -1,7 +1,4 @@
-import React, { ReactNode } from "react"
-import { JsxFragment } from "typescript"
-
-export default {
+const module = {
   getTranslationArray: (obj: any): any[] => {
     let array = []
     if (Array.isArray(obj)) 
@@ -16,3 +13,4 @@ export default {
     return <> { parts } </>
   }
 }
+export default module

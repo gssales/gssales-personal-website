@@ -14,7 +14,7 @@ function Content() {
       <Section icon="badge" id="about-me" titleKey="about-me.title">
         <div className="about-me flex flex-col lg:flex-row gap-6">
           <p>{ t('about-me.content') }</p>
-          <img src={`${process.env.PUBLIC_URL}/images/pfp.jpg`}/>
+          <img src={`${process.env.PUBLIC_URL}/images/pfp.jpg`} alt="Foto de mim"/>
         </div>
       </Section>
       

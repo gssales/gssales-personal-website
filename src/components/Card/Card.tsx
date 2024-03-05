@@ -1,6 +1,3 @@
-import React, { ReactNode } from "react"
-import { useTranslation } from "react-i18next";
-
 import './Card.scss'
 
 export interface CardProps {
@@ -13,7 +10,7 @@ export interface CardProps {
 function Card(props: CardProps) {
   return (
     <div className="card" onClick={() => window.open(props.href, "_self")}>
-      <img src={props.imgSrc} />
+      <img src={props.imgSrc} alt={props.imgSrc}/>
       <div className="content">
         <h4>{ props.title }</h4>
         <p>{ props.description }</p>

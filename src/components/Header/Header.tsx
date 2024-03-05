@@ -4,7 +4,7 @@ import './Header.scss';
 import Goo from '../Goo/Goo';
 
 function Header() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col items-center overflow-hidden">

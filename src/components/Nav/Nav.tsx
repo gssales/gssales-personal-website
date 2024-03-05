@@ -5,7 +5,7 @@ import './Nav.scss'
 import utils from '../../utils/utils';
 
 function Nav() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const anchors = utils.getTranslationArray(t('navigation', { returnObjects: true }))
     .filter(a => a.id === "about-me" || a.id === "interests" || a.id === "projects")
 
